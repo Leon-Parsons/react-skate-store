@@ -11,12 +11,11 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 150px;
 }
 
 .navbar .logo img {
-  width: 80px;
-  width: 80px;
+  width: 70px;
 }
 
 .navbar .menu {
@@ -24,12 +23,81 @@
   height: 100%;
   display: flex;
   align-items: center;
-  padding-left: 500px;
-  font-size: 20px;
+  justify-content: center;
 }
 
 .navbar a {
   color: black;
   text-decoration: none;
   margin: 18px;
+}
+
+.navbar .menu button {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar .menu svg {
+  font-size: 40px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .menu a {
+    width: 70px;
+  }
+  .navbar .logo {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .menu a {
+    display: none;
+  }
+
+  .navbar .menu {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .menu button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .menu button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
 }
