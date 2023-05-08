@@ -16,6 +16,9 @@ const NavBar = () => {
     <div className="navbar">
       <div className="logo" id={showMenu ? "open" : "close"}>
         <img src={Logo} alt="PicVal"/>
+        <div className="brandContainer">
+          <h2>Legally <br></br>Gray <br></br>Skate</h2>
+        </div>
         <div className="hiddenLinks">
           <Link to="/">Home</Link>
           <Link to="/Products">Products</Link>
