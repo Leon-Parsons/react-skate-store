@@ -6,9 +6,9 @@
   align-items: center;
   flex-direction: column;
 }
-.products .producsTitle {
-  font-family: cursive;
-  font-size: 60px;
+.products .productsTitle {
+  font-size: 70px;
+  margin-bottom: 20px;
 }
 
 .productsList {
